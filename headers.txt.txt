@@ -1,0 +1,29 @@
+## List of HTTP headers used in this project and descriptions
+
+expires: 
+
+date: Date/time when the server answered the request
+
+cache-control: Gives caching mechanism directives, eg: private, max age, etc 
+
+etag: Gives the version of a resource as an ASCII hashed string for cache validation. 
+It the etag is different, a new version of the resource exists. 
+
+vary: Cache control header which indicates which headers it used in content negotiation. (Eg: Origin)
+
+content-type': indicated what the media type of the resource sent is. 
+
+x-content-type-options': 'nosniff',
+
+x-frame-options': Simoky an opt-out for MIME-content sniffing, where browsers guess the MIME type instead 
+of merely using what they are told.
+
+x-xss-protection': An opt in for XSS attack protection?
+
+content-length': Byte size of the entity body
+
+server: (ideally minimal) information about the server software
+
+alt-svc': lists alternative ways to reach the same website/resource
+
+Transfer-Encoding: Tells the recipient what encoding the expect the content to be in. (gzip, chuncked, etc)
